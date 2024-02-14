@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <section class="todo">
+      <div id="main-card">
+        <div>
+          <h2>To Do List</h2>
+          <div class="input">
+            <input
+              type="text"
+              class="input-field"
+              id="todoInput"
+              placeholder="Add a to do"
+            />
+            <button class="btn">Add</button>
+          </div>
+          <ul class="scroll">
+            <li>Go to the gym</li>
+            <li>Prepare a healthy meal</li>
+            <li>Study Javascript</li>
+            <li>Finish group work</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="delete-container">
+            <button id="deleteButton">Delete Items</button>
+          </div>
+        </div>
+      </div>
+      <div class="separatorV"></div>
+
+      <!--Motivation Quotes-->
+      <div class="bottom-container">
+        <div id="motivation">
+          <h4>Today's Quote</h4>
+        </div>
+        <div class="separatorL"></div>
+
+        <!--Clock Timer-->
+
+        <div id="timer">
+          <h4>Current Time</h4>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
