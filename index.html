@@ -18,7 +18,7 @@
               id="todoInput"
               placeholder="Add a to do"
             />
-            <button class="btn" onclick="addTask()">Add</button>
+            <button id="input-btn" onclick="addTask()">Add</button>
           </div>
           <ul class="scroll" id="list-container">
             <li>Go to the gym</li>
@@ -40,16 +40,23 @@
       <div class="bottom-container">
         <div id="motivation">
           <h4>Today's Quote</h4>
+          <p id="quote">Click to generate random quote.</p>
+          <button id="generateButton">Generate Quote</button>
         </div>
         <div class="separatorL"></div>
 
         <!--Clock Timer-->
 
-        <div id="timer">
+        <div class="timer">
           <h4>Current Time</h4>
+          <div class="clock">
+            <div class="display"></div>
+          </div>
         </div>
       </div>
     </section>
     <script src="script.js"></script>
+    <script src="quotes.js"></script>
+    <script src="clock.js"></script>
   </body> 
 </html>

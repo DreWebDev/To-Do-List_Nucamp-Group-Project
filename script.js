@@ -28,6 +28,15 @@ listContainer.addEventListener("click", function(e) {
     }
 }, false);
 
+// Added a function when user presses enter on keyboard
+
+inputBox.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("input-btn").click();
+    }
+});
+
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML);
 }
